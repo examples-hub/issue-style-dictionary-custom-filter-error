@@ -1,0 +1,11 @@
+.pg {
+        --pg-g-color-base-redest: #e63c19;
+  --pg-g-color-base-white: #ffffff;
+  --pg-g-color-primary: var(--pg-g-color-theme-primary, #db3236);
+  --pg-g-color-theme-primary: #db3236;
+  --pg-g-color-theme-secondary: #fcc20d;
+  --pg-c-button-font-size: 2rem;
+  --pg-c-button-primary-background-color: var(--pg-g-color-theme-primary, #db3236);
+  --pg-c-button-primary-color: #e63c19;
+  --pg-c-checkbox-color: #3cba54;
+    }

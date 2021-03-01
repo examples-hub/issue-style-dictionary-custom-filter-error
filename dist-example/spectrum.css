@@ -1,0 +1,7 @@
+.spectrum {
+        --pg-g-color-base-redest: #e63c19;
+  --pg-g-color-base-white: #ffffff;
+  --pg-g-color-primary: var(--pg-g-color-theme-primary, #3cba54);
+  --pg-g-color-theme-primary: #3cba54;
+  --pg-g-color-theme-secondary: #fcc20d;
+    }
