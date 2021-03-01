@@ -1,10 +1,10 @@
 # issue-style-dictionary-custom-filter-error
 
-> repo for this [issue](https://github.com/amzn/style-dictionary/issues/551)
+> repo for this issue https://github.com/amzn/style-dictionary/issues/551
 
 # overview
 
-- [this](https://github.com/examples-hub/issue-style-dictionary-custom-filter-error) is a simplified example repo combining ideas from `multi-brand-multi-platform` and `node-modules-as-config-and-properties`.
+- [this repo](https://github.com/examples-hub/issue-style-dictionary-custom-filter-error) is a simplified example combining ideas from `multi-brand-multi-platform` and `node-modules-as-config-and-properties`.
   - all tokens are written in commonjs
   - simplified with color only tokens
   - only output css variables with references

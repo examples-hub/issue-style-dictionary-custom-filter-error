@@ -56,6 +56,8 @@ StyleDictionary.registerFormat({
               return `  --${prop.name}: var(--${value}, ${prop.value});`;
             }
           }
+
+          //
           return `  --${prop.name}: ${prop.value};`;
         })
         .join('\n')}
