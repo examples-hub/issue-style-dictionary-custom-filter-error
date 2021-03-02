@@ -43,8 +43,13 @@ StyleDictionary.registerFormat({
     return `${this.selectorName} {
       ${dictionary.allProperties
         .map((prop) => {
-          console.log('==, ', JSON.stringify(prop));
+          // console.log('==, ', JSON.stringify(prop));
           // let value = JSON.stringify(prop.value);
+
+          if (this.filterInFormatter && !this.filterInFormatter(prop)) {
+            return '';
+          }
+
           let value = prop.value;
 
           if (options.outputReferences) {
@@ -98,11 +103,11 @@ function getSDConfig(themeName) {
             destination: `${compType}.css`,
             format: 'css/variables',
             selectorName: `.${compType}`,
+            filterInFormatter: (prop) => {
+              return prop.name.includes(`${prefix4c}-${compType}`);
+            },
             options: {
               outputReferences: true,
-            },
-            filter: (prop) => {
-              return prop.name.includes(`${prefix4c}-${compType}`);
             },
           };
         }),
